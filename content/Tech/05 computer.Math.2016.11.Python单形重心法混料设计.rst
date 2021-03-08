@@ -23,12 +23,12 @@ Python实现单形重心法混料设计
 - 响应值：某一试验点试验后的评价。
 - 三角坐标系：由三角形构成的坐标系，顶点代表对应成分的最大值。特点是三角形内（含边）一点 :math:`P(ax,by,cz)`，过P作三条对三角形边的平行线，可以确定x,y,z的比例。如图所示。
 
-.. image:: {static}/static/images/article/computer.Math.2016.11.Python单形重心法混料设计.static.introduce_simplex_design.png
+.. image:: {static}/images/05/computer.Math.2016.11.Python单形重心法混料设计.static.introduce_simplex_design.png
     :alt: 单形重心法示意图
 
 - 等值线：将某一指标中数值相同的点连线。等值线实际上是将空间（Z轴）投影到平面（XY轴）的表示。如下图。
 
-.. image:: {static}/static/images/article/computer.Math.2016.11.Python单形重心法混料设计.static.contour_lines.png
+.. image:: {static}/images/05/computer.Math.2016.11.Python单形重心法混料设计.static.contour_lines.png
     :alt: 等值线示意图
 
 单形格子设计
@@ -54,7 +54,7 @@ Python实现单形重心法混料设计
 
 举例： :math:`p=3` ，一阶、二阶和三阶单形格子设计的点分布图。
 
-.. image:: {static}/static/images/article/computer.Math.2016.11.Python单形重心法混料设计.static.grid.png
+.. image:: {static}/images/05/computer.Math.2016.11.Python单形重心法混料设计.static.grid.png
     :alt: 格子设计示意图
 
 单形重心设计
@@ -198,7 +198,7 @@ Python实现单形重心法混料设计
 
 由于单形重心要求 :math:`0\leq x_i\leq 1` ，但在实际试验中，很难做到。如混凝土掺合料设计试验中，取煤灰或石粉等为100%时无法获取有效数据。
 
-.. image:: {static}/static/images/article/computer.Math.2016.11.Python单形重心法混料设计.static.lower_bound1.png
+.. image:: {static}/images/05/computer.Math.2016.11.Python单形重心法混料设计.static.lower_bound1.png
     :alt: 带下界的单形重心法示意图1
 
 如上图， :math:`a_i` 为各成分最小含量，我们将 :math:`\{x'_i\}` 称为自然空间， :math:`\{x_i\}` 称为编码空间（实际值），要在编码空间上进行单形重心设计，必须将其映射到自然空间上（编码值）。
@@ -211,7 +211,7 @@ Python实现单形重心法混料设计
   0\leq x'_i\leq x_i\leq 1
   \end{cases}
 
-.. image:: {static}/static/images/article/computer.Math.2016.11.Python单形重心法混料设计.static.lower_bound2.png
+.. image:: {static}/images/05/computer.Math.2016.11.Python单形重心法混料设计.static.lower_bound2.png
     :alt: 带下界的单形重心法示意图2
 
 编码值与实际值可以进行线性变换 :math:`\{x'_i\}\leftrightarrow\{x_i\}` ，由上图可得变换矩阵 :math:`M` ：
@@ -314,7 +314,7 @@ Python实现单形重心法混料设计
 
 此处可以按公式1采用 :math:`M\{3,2\}` 单形格子设计，本文主要讲单形重心设计，就不按格子设计来了。采用单形重心设计，取点如下图：
 
-.. image:: {static}/static/images/article/computer.Math.2016.11.Python单形重心法混料设计.static.ex1design.png
+.. image:: {static}/images/05/computer.Math.2016.11.Python单形重心法混料设计.static.ex1design.png
     :alt: 示例1设计图
 
 根据 :math:`a\geq 0.2,b\geq 0.4,c\geq0.2` 画出小单形，即黑色小三角，然后根据单形重心设计标出7个重心（红色数字表示）
@@ -365,7 +365,7 @@ Python实现单形重心法混料设计
 
   y=159x'_1x'_2x'_3+8x'_1x'_2-18x'_1x'_3+5x'_1+2x'_2x'_3+11x'_2+8x'_3
 
-.. image:: {static}/static/images/article/computer.Math.2016.11.Python单形重心法混料设计.static.ex1result.png
+.. image:: {static}/images/05/computer.Math.2016.11.Python单形重心法混料设计.static.ex1result.png
     :alt: 示例1结果图
 
 作三角坐标图，根据三角坐标系在最大值作图，可得自然空间中
@@ -389,7 +389,7 @@ Python实现单形重心法混料设计
 例2，混凝土强度预测
 -------------------
 
-.. image:: {static}/static/images/article/computer.Math.2016.11.Python单形重心法混料设计.static.ex2design.png
+.. image:: {static}/images/05/computer.Math.2016.11.Python单形重心法混料设计.static.ex2design.png
     :alt: 示例2设计图
 
 如上图，混凝土用胶凝材料为水泥，矿粉，煤灰，其中水泥用量在25%以上，求单形重心试验方案。
@@ -442,7 +442,7 @@ Python实现单形重心法混料设计
 
 对组分的单形重心设计可以作图。
 
-.. image:: {static}/static/images/article/computer.Math.2016.11.Python单形重心法混料设计.static.ex2result.png
+.. image:: {static}/images/05/computer.Math.2016.11.Python单形重心法混料设计.static.ex2result.png
     :alt: 示例2结果图
 
 .. _`Power Set`: https://en.wikipedia.org/wiki/Power_set

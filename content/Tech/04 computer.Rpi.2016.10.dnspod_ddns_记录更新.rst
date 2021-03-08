@@ -9,6 +9,7 @@ dnspod DDNS 自动更新
 :slug: dnspod_ddns_auto_update
 :authors: lao
 :summary: 使用Python对dnspod进行DDNS更新
+:toc: show
 
 前言
 ====

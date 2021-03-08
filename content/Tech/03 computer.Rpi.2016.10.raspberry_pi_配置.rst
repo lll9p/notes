@@ -9,6 +9,7 @@ Raspberry pi 配置
 :slug: config_raspberry_pi
 :authors: lao
 :summary: Raspberry Pi 配置
+:toc: show
 
 前言
 ====

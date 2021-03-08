@@ -21,19 +21,16 @@ MARKDOWN = {
 THEME = 'pelican-themes/simplify-theme'
 # Tell Pelican to add 'extra/custom.css' to the output dir
 STATIC_PATHS = [
-    'static/css/custom.css',
-    'static/images/favicon.png',
-    'static/images/article',
-    'static/robots.txt',
-    'static/CNAME',  # for github pages custom domain.
+    'images',
+    'static/favicon.png',
+    'extra/robots.txt',
+    'extra/CNAME',  # for github pages custom domain.
 ]
 # Tell Pelican to change the path to 'static/custom.css' in the output dir
 EXTRA_PATH_METADATA = {
-    'static/css/custom.css': {'path': 'static/css/custom.css'},
     'static/images/favicon.png': {'path': 'static/images/favicon.png'},
-    'static/images/article': {'path': 'static/images/article'},
-    'static/robots.txt': {'path': 'robots.txt'},
-    'static/CNAME': {'path': 'CNAME'},
+    'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/CNAME': {'path': 'CNAME'},
 }
 PAGE_PATHS = [
     'pages'
@@ -41,7 +38,6 @@ PAGE_PATHS = [
 
 DIRECT_TEMPLATES = ('search', 'index', 'categories',
                     'authors', 'archives', 'tags', 'drafts')
-#TEMPLATE_PAGES = {}
 # Cache configs
 CACHE_PATH = 'cache'
 CACHE_CONTENT = False
@@ -69,9 +65,9 @@ AUTHOR_FEED_RSS = None
 MENUITEMS = [('草稿', SITEURL + '/drafts.html',)
              ]
 
-#  Blogroll
-# LINKS = (('Pelican', 'http://getpelican.com/'),
-#         )
+# Blogroll
+LINKS = (('Pelican', 'http://getpelican.com/'),
+         )
 
 # Social widget
 SOCIAL = {'twitter': 'https://twitter.com/lll9p',
@@ -100,7 +96,7 @@ PLUGINS = [
     'post_stats',
     'sitemap',
     'related_posts',
-    'tipue_search',  # svn co https://github.com/getpelican/pelican-plugins/trunk/tipue_search tipue_search
+    'tipue_search',
 ]
 GITTALK = True
 
@@ -146,51 +142,8 @@ TOC = {
     'TOC_RUN': 'true'
 }
 
-# pelican-bootstrap3 theme settings
+# simplify-theme settings
 FAVICON = 'static/images/favicon.png'
-DISPLAY_PAGES_ON_MENU = True
-DISPLAY_CATEGORIES_ON_MENU = True
-DISPLAY_TAGS_ON_SIDEBAR = True
-DISPLAY_TAGS_INLINE = True
-DISPLAY_TOC_ON_SIDEBAR = True
-HIDE_SIDEBAR = False
-BOOTSTRAP_FLUID = False
-SHOW_SERIES = False
-SHOW_ARTICLE_AUTHOR = True
-SHOW_ARTICLE_CATEGORY = True
-SERIES_TEXT = r'本文是系列“%(name)s”的第%(index)s篇'
-DISPLAY_ARTICLE_INFO_ON_INDEX = True
-# AVATAR = 'avatar.png'
-ABOUT_PAGE = 'pages/about.html'
-ABOUT_ME = '''
-<img src="https://cn.gravatar.com/avatar/630038306291273e2f450d11d5925196" />
-<h3 style="text-align:center">
-<a href="https://twitter.com/lll9p" target="_blank">
-<i class="fa fa-twitter" style="text-align:left"></i></a>
-<a href="https://github.com/lll9p" target="_blank">
-<i class="fa fa-github" style="text-align:left"></i></a>
-<a href="http://weibo.com/lll9p"  target="_blank">
-<i class="fa fa-weibo" style="text-align:left"></i></a>
-<a href="http://www.facebook.com/laolilin" target="_blank">
-<i class="fa fa-facebook" style="text-align:left"></i></a>
-<a href="https://plus.google.com/+勞裏林" target="_blank">
-<i class="fa fa-google-plus" style="text-align:left"></i></a>
-</h3>
-'''
-CC_LICENSE = 'CC-BY-NC-SA'
-DOCUTIL_CSS = True
-TYPOGRIFY = False
-DISPLAY_BREADCRUMBS = True
-DISPLAY_CATEGORY_IN_BREADCRUMBS = True
-CC_LICENSE = 'CC-BY-NC-SA'
-OUTPUT_SOURCES = True
-OUTPUT_SOURCES_EXTENSION = '.rst'
-BOOTSTRAP_THEME = 'flatly'
-CUSTOM_CSS = 'static/css/custom.css'
-
-COMMENT_ON = False
-ADDTHIS_PROFILE = True
-
 MATH_JAX = {
     'align': 'center',
     'tex_extensions': [

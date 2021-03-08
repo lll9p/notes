@@ -9,6 +9,7 @@ reStructuredText 笔记
 :authors: lao
 :series: ReST相关
 :summary: reStructuredText 笔记+备忘录
+:toc: show
 
 
 Via `reStructuredText 笔记 <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`_
