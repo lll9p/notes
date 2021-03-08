@@ -1,0 +1,12 @@
+机器学习分析混凝土配合比
+########################
+:date: 2016-09-03 10:45
+:modified: 2016-09-03 10:45
+:status: draft
+:category: Tech
+:tags: 机器学习,混凝土,Machine learning,concrete
+:series: 机器学习应用
+:slug: machine-learning-analysis-concrete-proportion
+:authors: lao
+
+机器学习

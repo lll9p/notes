@@ -1,0 +1,24 @@
+language: python
+cache:
+    pip: true
+
+python:
+    - "3.8"
+
+install:
+    - pip install pelican jinja2 babel beautifulsoup4 markdown fabric
+
+before_script:
+    - git clone --recursive https://github.com/getpelican/pelican-plugins.git plugins
+    - git clone --recursive https://github.com/getpelican/pelican-themes.git pelican-themes
+
+script:
+    - fab publish
+
+after_success:
+    - cd output
+    - git init .
+    - git add -A .
+    - git commit -m "update from travis"
+    - git push --force --quiet https://lll9p:$GITHUB_TOKEN@github.com/lll9p/lll9p.github.io.git master
+

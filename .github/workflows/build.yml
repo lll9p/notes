@@ -1,0 +1,31 @@
+name: Generate and build then push.
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Update blog
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repos
+      uses: actions/checkout@v2
+    - name: Setup python
+      uses: actions/setup-python@v2
+    - name: Install packages
+      run: |
+        pip install wheel
+        pip install pelican
+        pip install beautifulsoup4
+    - name: Init plugins and themes
+      run: |
+        bash scripts/init.sh
+    - name: Execute build
+      run: |
+        pelican -s publishconf.py
+    - name: Push to repos
+      run: |
+        bash scripts/done.sh
+      env:
+        PUSH_TOKEN: ${{secrets.PUSH_TOKEN}}
