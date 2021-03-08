@@ -28,7 +28,7 @@ STATIC_PATHS = [
 ]
 # Tell Pelican to change the path to 'static/custom.css' in the output dir
 EXTRA_PATH_METADATA = {
-    'static/images/favicon.png': {'path': 'static/images/favicon.png'},
+    'static/favicon.png': {'path': 'static/favicon.png'},
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/CNAME': {'path': 'CNAME'},
 }
