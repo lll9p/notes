@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 from os import getenv
+from datetime import datetime
 
 AUTHOR = 'Lao'
 SITENAME = '劳思杂记'
@@ -142,8 +143,16 @@ TOC = {
 }
 
 # simplify-theme settings
+ROBOTS = 'index, follow'
 FAVICON = 'static/favicon.png'
+SITETITLE = SITENAME
+SITESUBTITLE = 'Just a blog'
+SITEDESCRIPTION = f'{SITENAME} - 一个什么都写的blog.'
+SITELOGO = 'logo.png'
+COPYRIGHT_YEAR = datetime.now().year
 GITTALK = False
+
+# MATHJAX settings
 MATH_JAX = {
     'align': 'center',
     'tex_extensions': [
