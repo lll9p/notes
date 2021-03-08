@@ -98,7 +98,6 @@ PLUGINS = [
     'related_posts',
     'tipue_search',
 ]
-GITTALK = True
 
 # Article settings
 # The URL to refer to an article.
@@ -143,7 +142,8 @@ TOC = {
 }
 
 # simplify-theme settings
-FAVICON = 'static/images/favicon.png'
+FAVICON = 'static/favicon.png'
+GITTALK = False
 MATH_JAX = {
     'align': 'center',
     'tex_extensions': [
