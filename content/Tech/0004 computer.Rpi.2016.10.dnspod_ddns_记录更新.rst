@@ -9,7 +9,6 @@ dnspod DDNS 自动更新
 :slug: dnspod_ddns_auto_update
 :authors: lao
 :summary: 使用Python对dnspod进行DDNS更新
-:toc: show
 
 前言
 ====
@@ -179,5 +178,5 @@ dnspod DDNS 自动更新
 #. 启用
    很简单，用 ``sudo systemctl enable ddns-update.timer`` 即可。
 
-.. _`我的Raspberry pi`: {filename}/Tech/computer.Rpi.2016.10.raspberry_pi_配置.rst
+.. _`我的Raspberry pi`: {filename}/Tech/0003\ computer.Rpi.2016.10.raspberry_pi_配置.rst
 .. _`DNSPOD`: //www.dnspod.cn

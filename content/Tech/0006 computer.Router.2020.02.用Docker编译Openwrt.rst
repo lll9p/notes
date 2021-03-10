@@ -9,7 +9,6 @@
 :slug: using_docker_to_build_openwrt
 :authors: lao
 :summary: docker编译Openwrt教程
-:toc: show
 
 前言
 ====

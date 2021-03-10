@@ -9,7 +9,6 @@ Python实现单形重心法混料设计
 :slug: implement_simplex_centroid_mix_design_by_python
 :summary: 使用Python实现单形重心设计法，进行混料设计
 :authors: lao
-:toc: show
 
 介绍及概念
 ==========
@@ -445,8 +444,6 @@ Python实现单形重心法混料设计
 .. image:: {static}/images/05/computer.Math.2016.11.Python单形重心法混料设计.static.ex2result.png
     :alt: 示例2结果图
 
-.. _`Power Set`: https://en.wikipedia.org/wiki/Power_set
-
 .. [#] 关颖男. 混料试验设计. 上海科学技术出版社, 1990.
-
 .. [#] 孙伟, 严捍东. 复合胶凝材料组成与混凝土抗压强度定量关系研究[J]. 東南大學學報 (自然科學版), 2003, 33(4): 450-453.
+.. _`Power Set`: //en.wikipedia.org/wiki/Power_set

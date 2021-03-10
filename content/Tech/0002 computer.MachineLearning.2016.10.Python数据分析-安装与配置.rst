@@ -9,7 +9,6 @@ Python数据分析-安装与配置
 :slug: python-install-config-for-data-analysis
 :authors: lao
 :summary: Python机器学习安装配置教程
-:toc: show
 
 前言
 =====

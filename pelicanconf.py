@@ -18,16 +18,14 @@ MARKDOWN = {
     'output_format': 'html5',
 }
 
-# THEME = 'pelican-themes/pelican-bootstrap3'
+# THEME = 'pelican-themes/simplify-theme'
 THEME = 'pelican-themes/simplify-theme'
-# Tell Pelican to add 'extra/custom.css' to the output dir
 STATIC_PATHS = [
     'images',
     'static/favicon.png',
     'extra/robots.txt',
     'extra/CNAME',  # for github pages custom domain.
 ]
-# Tell Pelican to change the path to 'static/custom.css' in the output dir
 EXTRA_PATH_METADATA = {
     'static/favicon.png': {'path': 'static/favicon.png'},
     'extra/robots.txt': {'path': 'robots.txt'},
@@ -47,6 +45,7 @@ GZIP_CACHE = True
 
 DEFAULT_METADATA = {
     'status': 'draft',
+    'toc': 'show',
 }
 
 TIMEZONE = 'Asia/Shanghai'
@@ -56,7 +55,7 @@ DATE_FORMATS = {
     'zh': '%Y年%m月%d日',
 }
 DEFAULT_LANG = 'en'
-#DEFAULT_LANG = 'Chinese (Simplified)'
+# DEFAULT_LANG = 'Chinese (Simplified)'
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
@@ -65,7 +64,6 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 MENUITEMS = [('草稿', SITEURL + '/drafts.html',)
              ]
-
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
          )
@@ -78,8 +76,7 @@ GITHUB_URL = 'https://github.com/lll9p'
 GOOGLE_ANALYTICS = 'UA-181588-5'
 DEFAULT_PAGINATION = 10
 
-# Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+RELATIVE_URLS = True
 JINJA_ENVIRONMENT = {'trim_blocks': True,
                      'lstrip_blocks': True,
                      'extensions': ['jinja2.ext.i18n', ],
@@ -136,10 +133,6 @@ SITEMAP = {
         'indexes': 'daily',
         'pages': 'monthly'
     }
-}
-TOC = {
-    'TOC_HEADERS': '^h[1-6]',
-    'TOC_RUN': 'true'
 }
 
 # simplify-theme settings
