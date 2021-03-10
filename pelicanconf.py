@@ -144,6 +144,7 @@ SITEDESCRIPTION = 'A blog to write ideas.'
 SITELOGO = 'logo.png'
 COPYRIGHT_YEAR = datetime.now().year
 GITTALK = False
+BAIDU_PUSH = True
 
 # MATHJAX settings
 MATH_JAX = {
