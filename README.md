@@ -1,3 +1,3 @@
-#lll9p's notes#
+# Lao's blog #
 
 ![Build Status](https://github.com/lll9p/notes/actions/workflows/build.yml/badge.svg)
