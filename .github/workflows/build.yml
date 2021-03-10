@@ -1,4 +1,4 @@
-name: Generate and build then push.
+name: Generate then push.
 on:
   push:
     branches:
