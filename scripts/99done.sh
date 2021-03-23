@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+echo 'Push to laolilin.github.io'
 cd output
 git config --global user.email "lll9p.china@gmail.com"
 git config --global user.name "lll9p"

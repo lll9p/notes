@@ -17,15 +17,16 @@ jobs:
       uses: actions/setup-python@v2
     - name: Install packages
       run: |
-        pip install wheel
-        pip install pelican
-        pip install beautifulsoup4
-    - name: Init plugins and themes
+        bash scripts/00install_packages.sh
+    - name: Install plugins
       run: |
-        bash scripts/init.sh
+        bash scripts/01install_plugins.sh
+    - name: Install themes
+      run: |
+        bash scripts/02install_themes.sh
     - name: Execute build
       run: |
-        pelican -s publishconf.py
+        bash scripts/50build.sh
     - name: Push to repos
       run: |
         bash scripts/done.sh

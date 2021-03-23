@@ -1,4 +1,5 @@
-echo 'Install plugins'
+#!/usr/bin/env bash
+echo 'Install plugins.'
 mkdir pelican-plugins
 svn checkout https://github.com/ingwinlu/pelican-bootstrapify/trunk/ pelican-plugins/bootstrapify
 svn checkout https://github.com/getpelican/pelican-plugins/trunk/tipue_search pelican-plugins/tipue_search
@@ -11,6 +12,3 @@ svn checkout https://github.com/getpelican/pelican-plugins/trunk/series pelican-
 svn checkout https://github.com/getpelican/pelican-plugins/trunk/post_stats pelican-plugins/post_stats
 svn checkout https://github.com/getpelican/pelican-plugins/trunk/sitemap pelican-plugins/sitemap
 svn checkout https://github.com/getpelican/pelican-plugins/trunk/related_posts pelican-plugins/related_posts
-echo 'Install themes'
-mkdir pelican-themes
-git clone -b dev https://github.com/lll9p/simplify-theme.git pelican-themes/simplify-theme
