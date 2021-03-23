@@ -26,7 +26,7 @@ jobs:
         bash scripts/02install_themes.sh
     - name: Execute build
       run: |
-        bash scripts/50build.sh
+        bash scripts/51build_publish.sh
     - name: Push to repos
       run: |
         bash scripts/done.sh
