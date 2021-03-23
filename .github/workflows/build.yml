@@ -29,6 +29,6 @@ jobs:
         bash scripts/51build_publish.sh
     - name: Push to repos
       run: |
-        bash scripts/done.sh
+        bash scripts/99done.sh
       env:
         PUSH_TOKEN: ${{secrets.PUSH_TOKEN}}

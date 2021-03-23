@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-source ./00install_packages.sh
-source ./01install_plugins.sh
-source ./02install_themes.sh
-source ./51build_publish.sh
-source ./101cloudflare_pages.sh
+source scripts/00install_packages.sh
+source scripts/01install_plugins.sh
+source scripts/02install_themes.sh
+source scripts/51build_publish.sh
+source scripts/101cloudflare_pages.sh
