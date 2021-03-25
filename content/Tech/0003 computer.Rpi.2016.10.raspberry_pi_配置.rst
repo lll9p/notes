@@ -32,7 +32,9 @@ rpi2B带USB wifi时功耗仅1~5W，很适合用来搭要求不高的家庭长期
 
 安装完，登录前运行 ``touch boot/ssh`` 并 ``echo hdmi_force_hotplug=1 >> boot/config.txt``
 
-在 `boot/boot.txt` 修改 `root` 为 `ro` ，即只读模式，同样，在 `etc/fstab` 中也需要将boot分区变为ro ``defaults,ro,errors=remount-ro``
+在 `boot/boot.txt` 修改 `root` 为 `ro` ，即只读模式，安装 `uboot-tools` 并执行 ``./mkscr`` 。
+
+同样，在 `etc/fstab` 中也需要将boot分区变为ro ``defaults,ro,errors=remount-ro``
 
 初次使用配置
 ------------
