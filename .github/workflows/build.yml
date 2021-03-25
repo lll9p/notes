@@ -1,4 +1,4 @@
-name: Generate then push.
+name: CI: Build blog.laolilin.com
 on:
   push:
     branches:

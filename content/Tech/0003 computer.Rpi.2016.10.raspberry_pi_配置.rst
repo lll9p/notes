@@ -1,7 +1,7 @@
 Raspberry pi 配置
 #################
 :date: 2016-10-03 09:43
-:modified: 2016-10-28 23:03
+:modified: 2021-03-25 09:20
 :status: published
 :category: Tech
 :tags: raspberry pi, resiliosync, 备份, 配置
@@ -34,24 +34,27 @@ rpi2B带USB wifi时功耗仅1~5W，很适合用来搭要求不高的家庭长期
 ------------
 
 初始账户和密码均为alarm
-ssh登录后先`su`到root，然后
 
-vi /etc/ssh/sshd_config
-add one line: `PermitRootLogin yes`
-and then `systemctl restart sshd`
-logout of ssh and reconnect, you can use root to login pi now.
-dont forget to remove `PermitRootLogin yes` from sshd_config
+ssh登录后先 ``su`` 到 `root` ，然后
 
-1\ change default ssh port on sshd_config
-change pacman mirror on /etc/pacman.d/mirrorlist
-Server = http://mirrors.ustc.edu.cn/archlinuxarm/$arch/$repo
-and then sudo pacman -Syy
+``vi /etc/ssh/sshd_config``
+
+加入一行: ``PermitRootLogin yes`` ；
+
+重启 `sshd` ``systemctl restart sshd`` ；
+
+从 `sshd_config` 删除 ``PermitRootLogin yes`` ；
+
+
+修改 `pacman` 镜像 ``vi /etc/pacman.d/mirrorlist`` ：
+
+``Server = http://mirrors.ustc.edu.cn/archlinuxarm/$arch/$repo``
 
 改用户名
 ---------
 
 按个人习惯，先改掉默认的用户名。
-if you login with alarm first you cannot change the default name
+如果你直接用alarm登录，是无法修改用户名的，先用 `root` 登录。
 
 .. code-block:: bash
 
@@ -61,8 +64,7 @@ if you login with alarm first you cannot change the default name
     # chenge user group
     groupmod -n $new_user alarm
 
-change the user password
-`passwd lao`
+修改用户密码 ``passwd lao`` 。
 
 安装 `sudo`
 -----------
@@ -90,10 +92,8 @@ change the user password
     rm /etc/localtime
     ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
-YOU CAN LOGOUT REBOOT IT NOW
-Install lrzsz and tmux , they are very useful
-remove welcome message from /etc/motd
-dadd a line 'tparam=audio=on' to /boot/config.txt
+然后就可以重启了，最后要安装 `lrzsz` 和 `tmux` 。
+
 配置bash
 ---------
 
