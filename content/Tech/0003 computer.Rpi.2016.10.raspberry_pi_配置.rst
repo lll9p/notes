@@ -36,6 +36,13 @@ rpi2B带USB wifi时功耗仅1~5W，很适合用来搭要求不高的家庭长期
 
 同样，在 `etc/fstab` 中也需要将boot分区变为ro ``defaults,ro,errors=remount-ro``
 
+安装树莓派专用内核 pacman -Syyu linux-raspberrypi4 raspberrypi-firmware
+
+修改etc/fstab 为0p1
+
+修改/boot/cmdline.txt 删除 kgdboc=ttyAMA0,115200
+修改/boot/config.txt 增加 hdmi_force_hotplug=1 enable_uart=1
+
 初次使用配置
 ------------
 
