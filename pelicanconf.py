@@ -143,9 +143,16 @@ SITESUBTITLE = 'Just a blog'
 SITEDESCRIPTION = 'A blog to write ideas.'
 SITELOGO = 'logo.png'
 COPYRIGHT_YEAR = datetime.now().year
-GITTALK = False
 # push to baidu
 BAIDU_PUSH = True
+# gittalk
+GITTALK = False
+GITTALK_ID = '32128e45765077b3152c'
+GITTALK_SECRET = '04b40e6a8191416fb3bcf87adb2cf7e2cb2be7d9'
+GITTALK_REPO = 'comments-blog.laolilin.com'
+GITTALK_OWNER = 'laolilin'
+GITTALK_ADMIN = "['laolilin','lll9p']"
+GITTALK_PROXY = 'https:/cloudflare-cors-anywhere.lll9p.workers.dev/?https://github.com/login/oauth/access_token'
 
 # MATHJAX settings
 MATH_JAX = {
