@@ -135,6 +135,11 @@ Raspberry Pi 4 和 Raspberry Pi Compute Module(CM4) 具备BCM2711 1.5GHz 4 核�
 
 **配置完成，现在可以重启并 `ssh` 进入系统了**
 
+CM4系统安装
+##############
+
+将 `Raspberry Pi 4` 的上述系统，复制到 `CM4` 的 TF 卡或EMMC中，就可以完成配置。
+
 .. _Archlinux: https://www.archlinux.org
 .. _`Archlinux ARM 安装指引`: https://archlinuxarm.org/platforms/armv8/broadcom/raspberry-pi-4
 .. _`ArchlinuxARM`: https://archlinuxarm.org/
