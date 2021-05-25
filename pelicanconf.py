@@ -154,6 +154,10 @@ GITTALK_OWNER = 'laolilin'
 GITTALK_ADMIN = "['laolilin','lll9p']"
 GITTALK_PROXY = 'https:/cloudflare-cors-anywhere.lll9p.workers.dev/?https://github.com/login/oauth/access_token'
 
+UTTERANCE_REPO = 'laolilin/comments-blog.laolilin.com'
+UTTERANCE_ISSUE_TERM = 'title'
+UTTERANCE_THEME = 'github-light'
+
 # MATHJAX settings
 MATH_JAX = {
     'align': 'center',
