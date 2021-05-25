@@ -1,5 +1,5 @@
-Raspberry pi 配置
-#################
+Raspberry pi 4 和 Cm4 aarch64 配置
+##################################
 :date: 2021-05-24 16:05
 :modified: 2021-05-24 16:05
 :status: published
