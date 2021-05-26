@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-import datetime
+from datetime import datetime
 import os
 import sys
 import time
@@ -23,6 +23,6 @@ CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 DELETE_OUTPUT_DIRECTORY = True
 GITTALK = True
 BUILD_TIME = str(
-    datetime.datetime.fromtimestamp(
+    datetime.fromtimestamp(
         time.time(),
         datetime.timezone.utc))
