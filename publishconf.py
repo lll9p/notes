@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
-from datetime import datetime
-from datetime import timezone
+from datetime import datetime, timezone
 import os
 import sys
 import time
@@ -25,4 +24,4 @@ GITTALK = True
 BUILD_TIME = str(
     datetime.fromtimestamp(
         time.time(),
-        datetime.timezone.utc))
+        timezone.utc))
