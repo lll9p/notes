@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
-from datetime import datetime, timezone
+
 import os
 import sys
 import time
+from datetime import datetime, timezone
+
 sys.path.append(os.curdir)
 from pelicanconf import *
 
@@ -15,13 +17,10 @@ SITEURL = "//blog.laolilin.com"
 RELATIVE_URLS = False
 
 FEED_DOMAIN = SITEURL
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-FEED_ALL_RSS = 'feeds/all.rss.xml'
-CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
+FEED_ALL_ATOM = "feeds/all.atom.xml"
+FEED_ALL_RSS = "feeds/all.rss.xml"
+CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
 
 DELETE_OUTPUT_DIRECTORY = True
 GITTALK = True
-BUILD_TIME = str(
-    datetime.fromtimestamp(
-        time.time(),
-        timezone.utc))
+BUILD_TIME = str(datetime.fromtimestamp(time.time(), timezone.utc))
