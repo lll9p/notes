@@ -10,7 +10,6 @@ SITEURL = '//' + getenv('SITEURL', default='localhost:8000')
 
 PATH = 'content'
 
-TIMEZONE = 'Asia/Shanghai'
 MARKDOWN = {
     'extensions': [
         'markdown.extensions.toc',  # add Table of Content
